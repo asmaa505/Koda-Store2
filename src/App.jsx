@@ -1,8 +1,12 @@
 import React from 'react'
+import Products from './Pages/Products';
 
 const App = () => {
   return (
-    <div className='bg-sky-100 text-center text-3xl text-red-200' >App</div>
+    <div> 
+      <Products/>
+    </div>
+
   )
 }
 
