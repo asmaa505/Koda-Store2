@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-main: #0f172a;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+}
+
+body{
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+}
+
+
+button:hover,
+li a:hover{
+    background-color: #1e293b;
+}
+
+button:hover svg{
+    color: #4f46e5;
+}
+
+ul,
+.icons{
+    background-color: #0b1120;
+}
+
+li a{
+    height: 40px;
+    padding: 5px 10px 10px 10px ;
+    border-radius: 40px;
+}
+
+li a:focus{
+    background-color: #4f46e5;
+}

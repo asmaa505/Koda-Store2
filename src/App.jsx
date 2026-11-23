@@ -1,10 +1,10 @@
 import React from 'react'
-import Products from './Pages/Products';
+import Navbar from './Component/Layout/Navbar';
 
 const App = () => {
   return (
     <div> 
-      <Products/>
+      <Navbar/>
     </div>
 
   )
