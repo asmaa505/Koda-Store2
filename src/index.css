@@ -24,7 +24,8 @@ li a:hover{
     background-color: #1e293b;
 }
 
-button:hover svg{
+button:hover svg,
+li a:hover{
     color: #4f46e5;
 }
 
@@ -41,4 +42,6 @@ li a{
 
 li a:focus{
     background-color: #4f46e5;
+    color: white;
+    font-weight: 500;
 }

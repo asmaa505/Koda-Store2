@@ -6,7 +6,7 @@ import {User} from "lucide-react"
 import {Sun} from "lucide-react"
 
 
-const Navbar = () => {
+const Navbar = ( {activeTab , setActiveTab} ) => {
     return (
         <div className='flex justify-around items-center' >
             {/* logo */}
@@ -16,10 +16,10 @@ const Navbar = () => {
 
             {/* Links */}
             <ul className='flex gap-5 justify-center items-center w-100 h-15 rounded-3xl' >
-                <li> <a href="#">Home</a> </li>
-                <li> <a href="#">Shop</a> </li>
-                <li> <a href="#">My Orders</a> </li>
-                <li> <a href="#">Whishlist</a> </li>
+                <li> <a onClick={ ()=> setActiveTab("home")} href="#">Home</a> </li>
+                <li> <a onClick={ ()=> setActiveTab("shop") } href="#">Shop</a> </li>
+                <li> <a onClick={ ()=> setActiveTab("myOrders") }  href="#">My Orders</a> </li>
+                <li> <a onClick={ ()=> setActiveTab("Whishlist") }  href="#">Whishlist</a> </li>
             </ul>
 
             {/* Icons */}
